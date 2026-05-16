@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GoWildAtlas locations — wildlife veterinary internships across Africa, Asia and the Americas." />
+  <title>Locations | GoWildAtlas</title>
+  <link rel="icon" href="/assets/img/favicon.ico" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero locations-hero">
+    <div class="page-hero__bg">
+    
+      <div class="page-hero__overlay"></div>
+    </div>
+    <div class="container page-hero__content">
+      <span class="section-label hero-reveal">Where We Operate</span>
+      <h1 class="hero-reveal">One World.<br>Wild Everywhere.</h1>
+      <p class="hero-reveal">Hover any country. Click ours to explore the programme.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       INTERACTIVE WORLD MAP
+       ============================================ -->
+  <section class="section map-section">
+    <div class="container map-outer">
+
+      <!-- Info Panel -->
+      <div class="map-panel" id="mapPanel">
+        <div class="map-panel__default" id="panelDefault">
+          <div class="map-panel__icon">◎</div>
+          <h3>Explore the Map</h3>
+          <p>Hover any country to see its name. Click a highlighted country to view the programme.</p>
+        </div>
+
+        <!-- Hover ghost panel -->
+        <div class="map-panel__hover" id="panelHover" style="display:none;">
+          <span class="map-hover-name" id="hoverName"></span>
+          <span class="map-hover-status" id="hoverStatus"></span>
+        </div>
+
+        <!-- Programme detail panels -->
+        <div class="map-panel__detail" id="panel-South Africa" style="display:none;">
+          <span class="section-label">Active — 2026</span>
+          <h3>South Africa</h3>
+          <div class="divider"></div>
+          <p>Two programmes across iconic Big Five reserves. Lion, elephant, rhino, leopard, and buffalo alongside expert wildlife vets.</p>
+          <ul class="panel-stats">
+            <li><strong>From</strong> $3,100</li>
+            <li><strong>Duration</strong> 14 days</li>
+            <li><strong>Species</strong> Big Five</li>
+            <li><strong>CPD</strong> Up to 40 hrs</li>
+          </ul>
+          <a href="/programs/south-africa.html" class="btn btn--primary">View Programme</a>
+        </div>
+
+        <div class="map-panel__detail" id="panel-Namibia" style="display:none;">
+          <span class="section-label">Active — 2026</span>
+          <h3>Namibia</h3>
+          <div class="divider"></div>
+          <p>Desert-adapted wildlife across arid savannah conservancies. Cheetah, oryx, and desert elephant.</p>
+          <ul class="panel-stats">
+            <li><strong>From</strong> $2,400</li>
+            <li><strong>Duration</strong> 14 days</li>
+            <li><strong>Species</strong> Desert-adapted</li>
+            <li><strong>CPD</strong> Up to 40 hrs</li>
+          </ul>
+          <a href="/programs/namibia.html" class="btn btn--primary">View Programme</a>
+        </div>
+
+        <div class="map-panel__detail" id="panel-Botswana" style="display:none;">
+          <span class="section-label">Active — 2026</span>
+          <h3>Botswana</h3>
+          <div class="divider"></div>
+          <p>The Okavango Delta — one of Africa's last great wildernesses. Wetland ecosystems and extraordinary biodiversity.</p>
+          <ul class="panel-stats">
+            <li><strong>From</strong> $2,300</li>
+            <li><strong>Duration</strong> 14 days</li>
+            <li><strong>Species</strong> Wetland + savannah</li>
+            <li><strong>CPD</strong> Up to 40 hrs</li>
+          </ul>
+          <a href="/programs/botswana.html" class="btn btn--primary">View Programme</a>
+        </div>
+
+        <div class="map-panel__detail" id="panel-United Republic of Tanzania" style="display:none;">
+          <span class="section-label">Active — 2026</span>
+          <h3>Tanzania</h3>
+          <div class="divider"></div>
+          <p>Serengeti ecosystems, Ngorongoro Crater, and Africa's highest wildlife densities. Expert wildlife veterinary medicine.</p>
+          <ul class="panel-stats">
+            <li><strong>From</strong> $3,300</li>
+            <li><strong>Duration</strong> 14 days</li>
+            <li><strong>Species</strong> Serengeti wildlife</li>
+            <li><strong>CPD</strong> Up to 40 hrs</li>
+          </ul>
+          <a href="/programs/tanzania.html" class="btn btn--primary">View Programme</a>
+        </div>
+
+        <div class="map-panel__detail" id="panel-Ecuador" style="display:none;">
+          <span class="section-label">Active — 2026</span>
+          <h3>Ecuador</h3>
+          <div class="divider"></div>
+          <p>Galápagos and mainland rainforest wildlife. Unique endemic species and marine conservation opportunities.</p>
+          <ul class="panel-stats">
+            <li><strong>From</strong> $3,250</li>
+            <li><strong>Duration</strong> 14 days</li>
+            <li><strong>Species</strong> Galápagos + rainforest</li>
+            <li><strong>CPD</strong> Up to 40 hrs</li>
+          </ul>
+          <a href="/programs/ecuador.html" class="btn btn--primary">View Programme</a>
+        </div>
+
+        <div class="map-panel__detail" id="panel-Costa Rica" style="display:none;">
+          <span class="section-label">Active — 2026</span>
+          <h3>Costa Rica</h3>
+          <div class="divider"></div>
+          <p>Tropical wildlife rescue and rehabilitation in Central America's biodiversity hotspot.</p>
+          <ul class="panel-stats">
+            <li><strong>From</strong> $3,100</li>
+            <li><strong>Duration</strong> 14 days</li>
+            <li><strong>Species</strong> Tropical wildlife</li>
+            <li><strong>CPD</strong> Up to 40 hrs</li>
+          </ul>
+          <a href="/programs/costa-rica.html" class="btn btn--primary">View Programme</a>
+        </div>
+
+      </div>
+
+      <!-- Map container -->
+      <div class="map-wrap">
+        <div id="world-map-container"></div>
+        <div class="map-legend">
+          <span class="legend-item legend-active">Active 2026</span>
+          <span class="legend-item legend-rest">Other countries</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       LOCATION CARDS
+       ============================================ -->
+  <section class="section section--sand location-cards">
+    <div class="container">
+      <div class="text-center fade-up">
+        <span class="section-label">All Programmes</span>
+        <div class="divider divider--center"></div>
+        <h2>Choose Your Ecosystem</h2>
+      </div>
+
+      <div class="loc-grid stagger">
+
+        <article class="loc-card hover-lift fade-up img-zoom">
+          <img src="/assets/img/helii.jpg" alt="South Africa program" />
+          <div class="loc-card__body">
+            <span class="section-label">South Africa</span>
+            <h3>Big Five & Beyond</h3>
+            <p>Two programmes across iconic reserves. Lion, elephant, rhino, leopard, buffalo.</p>
+            <div class="loc-card__footer">
+              <span class="loc-price">From $3,100</span>
+              <a href="/programs/south-africa.html" class="btn btn--primary">Explore</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="loc-card hover-lift fade-up img-zoom">
+          <img src="/assets/img/t3.jpg" alt="Namibia program" />
+          <div class="loc-card__body">
+            <span class="section-label">Namibia</span>
+            <h3>Desert-Adapted Species</h3>
+            <p>Cheetah, oryx, desert elephant across arid savannah conservancies.</p>
+            <div class="loc-card__footer">
+              <span class="loc-price">From $2,400</span>
+              <a href="/programs/namibia.html" class="btn btn--primary">Explore</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="loc-card hover-lift fade-up img-zoom">
+          <img src="/assets/img/goatlas1 (55).jpg" alt="Botswana program" />
+          <div class="loc-card__body">
+            <span class="section-label">Botswana</span>
+            <h3>Okavango Delta</h3>
+            <p>Wetland ecosystems and floodplain wildlife in pristine wilderness.</p>
+            <div class="loc-card__footer">
+              <span class="loc-price">From $2,300</span>
+              <a href="/programs/botswana.html" class="btn btn--primary">Explore</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="loc-card hover-lift fade-up img-zoom">
+          <img src="/assets/img/goatlas1 (17).jpg" alt="Tanzania and Zanzibar program" />
+          <div class="loc-card__body">
+            <span class="section-label">Tanzania & Zanzibar</span>
+            <h3>Serengeti & Ngorongoro</h3>
+            <p>Serengeti plains, Ngorongoro Crater and the Indian Ocean—wildlife medicine from bush to coast.</p>
+            <div class="loc-card__footer">
+              <span class="loc-price">From $3,200</span>
+              <a href="/programs/tanzania.html" class="btn btn--primary">Explore</a>
+            </div>
+          </div>
+        </article>
+
+        
+
+    
+
+        <article class="loc-card hover-lift fade-up img-zoom">
+          <img src="/assets/img/mana5280-l-g2bn6Z__M-unsplash.jpg" alt="Ecuador program" />
+          <div class="loc-card__body">
+            <span class="section-label">Ecuador</span>
+            <h3>Galápagos & Rainforest</h3>
+            <p>Marine conservation and endemic wildlife medicine across the Galápagos and mainland rainforests.</p>
+            <div class="loc-card__footer">
+              <span class="loc-price">From $3,250</span>
+              <a href="/programs/ecuador.html" class="btn btn--primary">Explore</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="loc-card hover-lift fade-up img-zoom">
+          <img src="/assets/img/rus33333-sloth-1502299.jpg" alt="Costa Rica program" />
+          <div class="loc-card__body">
+            <span class="section-label">Costa Rica</span>
+            <h3>Tropical Rescue & Rehab</h3>
+            <p>Wildlife rehabilitation and conservation in one of Central America's most biodiverse ecosystems.</p>
+            <div class="loc-card__footer">
+              <span class="loc-price">From $3,100</span>
+              <a href="/programs/costa-rica.html" class="btn btn--primary">Explore</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--dark final-cta text-center">
+    <div class="container fade-up">
+      <span class="section-label">Limited Places</span>
+      <div class="divider divider--center"></div>
+      <h2>Ready to Pick Your Location?</h2>
+      <p style="margin: 0 auto 2.5rem;">All 2026 programmes cap at 8 participants. Secure your spot before they fill.</p>
+      <a href="/apply.html" class="btn btn--primary">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/map.js"></script>
+</body>
+</html>

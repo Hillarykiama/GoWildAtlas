@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact GoWildAtlas — get in touch about our wildlife veterinary internship programmes across Africa." />
+  <title>Contact | GoWildAtlas</title>
+  <link rel="icon" href="/assets/img/favicon.ico" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero page-hero--short">
+    <div class="page-hero__bg">
+      <div class="page-hero__overlay"></div>
+    </div>
+    <div class="container page-hero__content">
+      <span class="section-label hero-reveal">Get In Touch</span>
+      <h1 class="hero-reveal">We'd Love<br>to Hear From You.</h1>
+      <p class="hero-reveal">Questions about programmes, dates, or suitability — we respond to every message personally within 2 working days.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section class="section contact-section">
+    <div class="container contact-outer">
+
+      <!-- Contact Info -->
+      <div class="contact-info fade-up">
+
+        <div class="contact-block">
+          <span class="section-label">Email</span>
+          <a href="mailto:info@gowildatlas.com" class="contact-link">
+            info@gowildatlas.com
+          </a>
+        </div>
+
+        <div class="contact-block">
+          <span class="section-label">WhatsApp</span>
+          <a href="https://wa.me/254700000000" target="_blank" rel="noopener" class="contact-link">
+            +254 700 000 000
+          </a>
+          <p>We are available on WhatsApp Monday – Friday, 8am – 6pm EAT.</p>
+        </div>
+
+        <div class="contact-block">
+          <span class="section-label">Response Time</span>
+          <p>We respond to all enquiries within 2 working days. For urgent matters please use WhatsApp.</p>
+        </div>
+
+        <div class="contact-block">
+          <span class="section-label">Based In</span>
+          <p>Our operations team is based in Nairobi, Kenya — with field teams across South Africa, Namibia, and Botswana.</p>
+        </div>
+
+        <div class="contact-social">
+          <span class="section-label">Follow Us</span>
+          <div class="contact-social-links">
+            <a href="#" target="_blank" rel="noopener" class="social-link">
+              Instagram
+            </a>
+            <a href="#" target="_blank" rel="noopener" class="social-link">
+              Facebook
+            </a>
+            <a href="#" target="_blank" rel="noopener" class="social-link">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <a href="https://wa.me/254700000000" target="_blank" rel="noopener"
+           class="btn btn--primary contact-wa-btn">
+          Chat on WhatsApp
+        </a>
+
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap fade-up">
+        <form
+          id="contactForm"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-step__header">
+            <h2>Send Us a Message</h2>
+            <p>Fill in the form and we'll get back to you within 2 working days.</p>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="contactFirstName">First Name <span class="required">*</span></label>
+              <input type="text" id="contactFirstName" name="firstName" required placeholder="Your first name" />
+            </div>
+            <div class="form-group">
+              <label for="contactLastName">Last Name <span class="required">*</span></label>
+              <input type="text" id="contactLastName" name="lastName" required placeholder="Your last name" />
+            </div>
+            <div class="form-group form-group--full">
+              <label for="contactEmail">Email Address <span class="required">*</span></label>
+              <input type="email" id="contactEmail" name="email" required placeholder="your@email.com" />
+            </div>
+            <div class="form-group form-group--full">
+              <label for="contactSubject">Subject <span class="required">*</span></label>
+              <select id="contactSubject" name="subject" required>
+                <option value="" disabled selected>What is your enquiry about?</option>
+                <option value="south-africa">South Africa Programme</option>
+                <option value="namibia">Namibia Programme</option>
+                <option value="botswana">Botswana Programme</option>
+                <option value="tanzania-waitlist">Tanzania Waitlist</option>
+                <option value="zanzibar-waitlist">Zanzibar Waitlist</option>
+                <option value="cpd">CPD & Accreditation</option>
+                <option value="group-booking">Group Booking</option>
+                <option value="general">General Enquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group form-group--full">
+              <label for="contactMessage">Message <span class="required">*</span></label>
+              <textarea id="contactMessage" name="message" required rows="6"
+                placeholder="Tell us what you'd like to know — we love hearing from people who are passionate about wildlife medicine..."></textarea>
+            </div>
+            <div class="form-group form-group--full">
+              <label class="checkbox-label">
+                <input type="checkbox" name="marketingConsent" />
+                <span>I'm happy to receive programme updates and news from GoWildAtlas.</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--primary contact-submit-btn">
+            Send Message ✦
+          </button>
+
+          <!-- Success -->
+          <div class="contact-success" id="contactSuccess" style="display:none;">
+            <span class="contact-success__icon">✦</span>
+            <p>Message received — we'll be in touch within 2 working days.</p>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       FAQ
+       ============================================ -->
+  <section class="section section--sand faq-section">
+    <div class="container">
+      <div class="text-center fade-up">
+        <span class="section-label">Common Questions</span>
+        <div class="divider divider--center"></div>
+        <h2>Frequently Asked</h2>
+      </div>
+
+      <div class="faq-grid stagger">
+
+        <div class="faq-item fade-up">
+          <button class="faq-question" aria-expanded="false">
+            Do I need prior wildlife experience?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No prior wildlife experience is required. Our programmes are designed for veterinary students, nurses, and qualified vets at all stages of their career. What matters is your passion for wildlife medicine and your commitment to the field.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up">
+          <button class="faq-question" aria-expanded="false">
+            What is included in the programme fee?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>All accommodation, meals, field activities, transfers from the nearest international airport, equipment, PPE, and your CPD certificate are included. International flights, travel insurance, visa fees, and personal spending money are not included.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up">
+          <button class="faq-question" aria-expanded="false">
+            How are CPD hours verified?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We maintain a detailed daily log of all clinical and educational activities throughout your programme. On completion you receive a signed CPD certificate and activity log that you can submit to your professional body. We currently support RCVS, VCI, and most EU veterinary bodies.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up">
+          <button class="faq-question" aria-expanded="false">
+            What is the deposit and cancellation policy?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>A 25% deposit is required to secure your place. The balance is due 8 weeks before your programme start date. Cancellations made more than 8 weeks before departure receive a full refund minus the deposit. Cancellations within 8 weeks are non-refundable but we will always try to find an alternative date for you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up">
+          <button class="faq-question" aria-expanded="false">
+            Is travel insurance required?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes — comprehensive travel and medical insurance is mandatory for all participants. We recommend policies that include emergency medical evacuation cover. We can recommend trusted providers if needed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up">
+          <button class="faq-question" aria-expanded="false">
+            Can I book as a group?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes — groups of 3 or more receive a 10% discount on programme fees. University and veterinary society groups can also enquire about private programme dates. Contact us directly to discuss group bookings.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/contact.js"></script>
+</body>
+</html>

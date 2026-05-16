@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Apply for a GoWildAtlas wildlife veterinary or conservation programme in South Africa, Namibia, Botswana, Tanzania & Zanzibar, Ecuador, or Costa Rica." />
+  <title>Apply | GoWildAtlas</title>
+  <link rel="icon" href="/assets/img/favicon.ico" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero page-hero--short">
+    <div class="page-hero__bg">
+      
+      <div class="page-hero__overlay"></div>
+    </div>
+    <div class="container page-hero__content">
+      <span class="section-label hero-reveal">Applications 2026</span>
+      <h1 class="hero-reveal">Apply for Your<br>Field Season.</h1>
+      <p class="hero-reveal">Complete the form below. We review every application personally and respond within 3 working days.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       APPLICATION FORM
+       ============================================ -->
+  <section class="section apply-section">
+    <div class="container apply-outer">
+
+      <!-- Progress Bar -->
+      <div class="apply-progress">
+        <div class="apply-progress__track">
+          <div class="apply-progress__fill" id="progressFill"></div>
+        </div>
+        <div class="apply-steps" id="applySteps">
+          <span class="apply-step active" data-step="1">Personal</span>
+          <span class="apply-step" data-step="2">Professional</span>
+          <span class="apply-step" data-step="3">Programme</span>
+          <span class="apply-step" data-step="4">Final</span>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form
+        id="applyForm"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        class="apply-form"
+      >
+
+        <!-- ── Step 1: Personal Details ── -->
+        <div class="form-step active" id="step-1">
+          <div class="form-step__header">
+            <span class="section-label">Step 1 of 4</span>
+            <h2>Personal Details</h2>
+            <p>Tell us a little about yourself.</p>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="firstName">First Name <span class="required">*</span></label>
+              <input type="text" id="firstName" name="firstName" required placeholder="e.g. Sarah" />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name <span class="required">*</span></label>
+              <input type="text" id="lastName" name="lastName" required placeholder="e.g. Mitchell" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" required placeholder="+44 7700 000000" />
+            </div>
+            <div class="form-group">
+              <label for="nationality">Nationality <span class="required">*</span></label>
+              <input type="text" id="nationality" name="nationality" required placeholder="e.g. British" />
+            </div>
+          
+            <div class="form-group">
+              <label for="age">Age <span class="required">*</span></label>
+              <input type="number" id="age" name="age" min="16" max="99" required placeholder="e.g. 24" />
+            </div>
+          </div>
+
+          <div class="form-nav">
+            <span></span>
+            <button type="button" class="btn btn--primary next-btn" data-next="2">
+              Next — Professional Details →
+            </button>
+          </div>
+        </div>
+
+        <!-- ── Step 2: Professional Background ── -->
+        <div class="form-step" id="step-2">
+          <div class="form-step__header">
+            <span class="section-label">Step 2 of 4</span>
+            <h2>Your Background</h2>
+            <p>This helps us understand your experience and match you with the right field team.</p>
+          </div>
+
+          <div class="form-grid">
+
+            <div class="form-group form-group--full">
+              <label for="role">Primary Background <span class="required">*</span></label>
+              <select id="role" name="role" required>
+                <option value="" disabled selected>Select your background</option>
+
+                <option value="vet-student">Veterinary Student</option>
+                <option value="pre-vet-animal-science">Pre-vet / Animal Science Student</option>
+                <option value="vet-nurse">Veterinary Nurse / RVN</option>
+                <option value="veterinarian">Qualified Veterinarian</option>
+                <option value="vet-tech">Veterinary Technician</option>
+
+                <option value="zoology-conservation">Zoology / Conservation Student</option>
+                <option value="gap-year">Gap Year Student / Traveler</option>
+                <option value="career-changer">Career Changer</option>
+                <option value="wildlife-enthusiast">Wildlife Enthusiast / Adventurer</option>
+
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="experienceLevel">Experience Level <span class="required">*</span></label>
+              <select id="experienceLevel" name="experienceLevel" required>
+                <option value="" disabled selected>Select experience level</option>
+                <option value="new-to-fieldwork">New to fieldwork</option>
+                <option value="animal-care">Animal care or volunteering experience</option>
+                <option value="clinical-training">Clinical or veterinary training</option>
+                <option value="wildlife-conservation">Wildlife / conservation field experience</option>
+                <option value="qualified-professional">Qualified professional</option>
+              </select>
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="questions">Relevant Experience or Questions</label>
+              <textarea id="questions" name="questions" rows="4" placeholder="Optional - tell us about relevant animal, veterinary, conservation, travel, or field experience. You can also ask us anything here."></textarea>
+            </div>
+
+          </div>
+
+          <div class="form-nav">
+            <button type="button" class="btn btn--dark prev-btn" data-prev="1">
+              ← Back
+            </button>
+            <button type="button" class="btn btn--primary next-btn" data-next="3">
+              Next — Programme Choice →
+            </button>
+          </div>
+        </div>
+
+        <!-- ── Step 3: Programme Selection ── -->
+        <div class="form-step" id="step-3">
+          <div class="form-step__header">
+            <span class="section-label">Step 3 of 4</span>
+            <h2>Programme Selection</h2>
+            <p>Choose your preferred location and dates.</p>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group form-group--full">
+              <label>Preferred Programme <span class="required">*</span></label>
+              <div class="programme-options">
+                <label class="programme-option">
+                  <input type="radio" name="programme" value="south-africa" required />
+                  <div class="programme-option__body">
+                    <strong>South Africa - Big Five &amp; Beyond</strong>
+                    <span>From $3,100</span>
+                  </div>
+                </label>
+                <label class="programme-option">
+                  <input type="radio" name="programme" value="namibia" />
+                  <div class="programme-option__body">
+                    <strong>Namibia - Desert-Adapted Species</strong>
+                    <span>From $2,400</span>
+                  </div>
+                </label>
+                <label class="programme-option">
+                  <input type="radio" name="programme" value="botswana" />
+                  <div class="programme-option__body">
+                    <strong>Botswana - Okavango Delta</strong>
+                    <span>From $2,300</span>
+                  </div>
+                </label>
+                <label class="programme-option">
+                  <input type="radio" name="programme" value="tanzania-zanzibar" />
+                  <div class="programme-option__body">
+                    <strong>Tanzania &amp; Zanzibar - Serengeti &amp; Ngorongoro</strong>
+                    <span>From $3,200</span>
+                  </div>
+                </label>
+                <label class="programme-option">
+                  <input type="radio" name="programme" value="ecuador" />
+                  <div class="programme-option__body">
+                    <strong>Ecuador - Galapagos &amp; Rainforest</strong>
+                    <span>From $3,250</span>
+                  </div>
+                </label>
+                <label class="programme-option">
+                  <input type="radio" name="programme" value="costa-rica" />
+                  <div class="programme-option__body">
+                    <strong>Costa Rica - Tropical Rescue &amp; Rehab</strong>
+                    <span>From $3,100</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="preferredDates">Preferred Dates <span class="required">*</span></label>
+              <select id="preferredDates" name="preferredDates" required>
+                <option value="" disabled selected>Select preferred dates</option>
+                <option value="1-14-june-2026">1 - 14 June 2026</option>
+                <option value="15-28-june-2026">15 - 28 June 2026</option>
+                <option value="29-june-12-july-2026">29 June - 12 July 2026</option>
+                <option value="13-26-july-2026">13 - 26 July 2026</option>
+                <option value="27-july-9-august-2026">27 July - 9 August 2026</option>
+                <option value="10-23-august-2026">10 - 23 August 2026</option>
+                <option value="24-august-6-september-2026">24 August - 6 September 2026</option>
+                <option value="7-20-september-2026">7 - 20 September 2026</option>
+                <option value="21-september-4-october-2026">21 September - 4 October 2026</option>
+                <option value="5-18-october-2026">5 - 18 October 2026</option>
+              </select>
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="alternateDates">Alternative Dates</label>
+              <select id="alternateDates" name="alternateDates">
+                <option value="" selected>No alternative preference</option>
+                <option value="1-14-june-2026">1 - 14 June 2026</option>
+                <option value="15-28-june-2026">15 - 28 June 2026</option>
+                <option value="29-june-12-july-2026">29 June - 12 July 2026</option>
+                <option value="13-26-july-2026">13 - 26 July 2026</option>
+                <option value="27-july-9-august-2026">27 July - 9 August 2026</option>
+                <option value="10-23-august-2026">10 - 23 August 2026</option>
+                <option value="24-august-6-september-2026">24 August - 6 September 2026</option>
+                <option value="7-20-september-2026">7 - 20 September 2026</option>
+                <option value="21-september-4-october-2026">21 September - 4 October 2026</option>
+                <option value="5-18-october-2026">5 - 18 October 2026</option>
+              </select>
+            </div>
+            <div class="form-group form-group--full">
+              <label for="hearAboutUs">How did you hear about us?</label>
+              <select id="hearAboutUs" name="hearAboutUs">
+                <option value="" disabled selected>Select an option</option>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="google">Google Search</option>
+                <option value="university">University / College</option>
+                <option value="word-of-mouth">Word of Mouth</option>
+                <option value="vet-society">Veterinary Society</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-nav">
+            <button type="button" class="btn btn--dark prev-btn" data-prev="2">
+              ← Back
+            </button>
+            <button type="button" class="btn btn--primary next-btn" data-next="4">
+              Next — Final Details →
+            </button>
+          </div>
+        </div>
+
+        <!-- ── Step 4: Final Details ── -->
+        <div class="form-step" id="step-4">
+          <div class="form-step__header">
+            <span class="section-label">Step 4 of 4</span>
+            <h2>Final Details</h2>
+            <p>Almost there — just a few final questions.</p>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group form-group--full">
+              <label for="medicalConditions">Medical Conditions or Dietary Requirements</label>
+              <textarea id="medicalConditions" name="medicalConditions" rows="3" placeholder="Please list any medical conditions, allergies, or dietary requirements we should be aware of. If none, write 'None'."></textarea>
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="emergencyContact">Emergency Contact Name & Number <span class="required">*</span></label>
+              <input type="text" id="emergencyContact" name="emergencyContact" required placeholder="e.g. John Mitchell — +44 7700 111111" />
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="additionalInfo">Anything Else We Should Know?</label>
+              <textarea id="additionalInfo" name="additionalInfo" rows="3" placeholder="Any additional information, questions, or specific requests..."></textarea>
+            </div>
+
+            <div class="form-group form-group--full">
+              <label class="checkbox-label">
+                <input type="checkbox" name="termsAgreed" required />
+                <span>I have read and agree to the <a href="/contact.html" target="_blank">Terms & Conditions</a> and understand that submission of this form does not guarantee a place. <span class="required">*</span></span>
+              </label>
+            </div>
+
+            <div class="form-group form-group--full">
+              <label class="checkbox-label">
+                <input type="checkbox" name="marketingConsent" />
+                <span>I am happy to receive programme updates and news from GoWildAtlas by email.</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-nav">
+            <button type="button" class="btn btn--dark prev-btn" data-prev="3">
+              ← Back
+            </button>
+            <button type="submit" class="btn btn--primary submit-btn">
+              Submit Application ✦
+            </button>
+          </div>
+        </div>
+
+        <!-- ── Success Message ── -->
+        <div class="form-success" id="formSuccess" style="display:none;">
+          <div class="form-success__icon">✦</div>
+          <h2>Application Received.</h2>
+          <p>Thank you for applying to GoWildAtlas. We review every application personally and will be in touch within 3 working days.</p>
+          <p>In the meantime, feel free to <a href="/contact.html">contact us</a> with any questions.</p>
+          <a href="/index.html" class="btn btn--primary" style="margin-top:2rem;">Back to Home</a>
+        </div>
+
+      </form>
+
+    </div>
+  </section>
+
+  <!-- REASSURANCE STRIP -->
+  <section class="section section--sand apply-reassurance">
+    <div class="container">
+      <div class="reassurance-grid stagger">
+        <div class="reassurance-item fade-up">
+          <span class="reassurance-icon">◎</span>
+          <h4>Personal Review</h4>
+          <p>Every application is read by a real person. We respond within 3 working days.</p>
+        </div>
+        <div class="reassurance-item fade-up">
+          <span class="reassurance-icon">✦</span>
+          <h4>No Commitment Yet</h4>
+          <p>Submitting this form is an expression of interest. No payment is required until your place is confirmed.</p>
+        </div>
+        <div class="reassurance-item fade-up">
+          <span class="reassurance-icon">⟳</span>
+          <h4>Flexible Dates</h4>
+          <p>If your preferred dates aren't available we will work with you to find the best alternative.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/apply.js"></script>
+</body>
+</html>
+

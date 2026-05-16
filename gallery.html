@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GoWildAtlas photo gallery — wildlife veterinary internships across Africa. Real field work, real wildlife." />
+  <title>Gallery | GoWildAtlas</title>
+  <link rel="icon" href="/assets/img/favicon.ico" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+     
+      <div class="page-hero__overlay"></div>
+    </div>
+    <div class="container page-hero__content">
+      <span class="section-label hero-reveal">From the Field</span>
+      <h1 class="hero-reveal">Real Work.<br>Real Wildlife.</h1>
+      <p class="hero-reveal">Every image here was taken on a GoWildAtlas programme. This is what two weeks in the field actually looks like.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FILTER BAR
+       ============================================ -->
+  <section class="gallery-filter-bar">
+    <div class="container gallery-filter-inner">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="south-africa">South Africa</button>
+      <button class="filter-btn" data-filter="namibia">Namibia</button>
+      <button class="filter-btn" data-filter="botswana">Botswana</button>
+      <button class="filter-btn" data-filter="field-work">Field Work</button>
+      <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+    </div>
+  </section>
+
+  <!-- ============================================
+       MASONRY GALLERY
+       ============================================ -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="masonry-grid" id="masonryGrid">
+
+        <div class="masonry-item" data-category="south-africa field-work">
+          <img src="/assets/img/goatlas1 (43).jpg" alt="Rhino darting South Africa" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">South Africa</span>
+            <span class="masonry-item__caption">Rhino immobilisation — Limpopo</span>
+          </div>
+        </div>
+
+        <div class="masonry-item masonry-item--tall" data-category="namibia wildlife">
+          <img src="/assets/img/goatlas1 (50).jpg" alt="Desert elephant Namibia" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">Namibia</span>
+            <span class="masonry-item__caption">Desert elephant — Kunene Region</span>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-category="botswana wildlife">
+          <img src="/assets/img/hal-cooks-vNyQjk0quvM-unsplash.jpg" alt="African wild dog Botswana" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">Botswana</span>
+            <span class="masonry-item__caption">Wild dog pack — Okavango</span>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-category="south-africa wildlife">
+          <img src="/assets/img/Collaring1.jpeg" alt="Lion collaring South Africa" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">South Africa</span>
+            <span class="masonry-item__caption">Lion collar check — Limpopo</span>
+          </div>
+        </div>
+
+        <div class="masonry-item masonry-item--wide" data-category="botswana field-work">
+          <img src="/assets/img/hippo.jpg" alt="Hippo monitoring Botswana" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">Botswana</span>
+            <span class="masonry-item__caption">Hippo survey — Okavango Delta</span>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-category="namibia field-work">
+          <img src="/assets/img/Cheetah-and-vet-1-960x755.jpeg" alt="Cheetah health check Namibia" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">Namibia</span>
+            <span class="masonry-item__caption">Cheetah health assessment</span>
+          </div>
+        </div>
+
+        <div class="masonry-item masonry-item--tall" data-category="south-africa field-work">
+          <img src="/assets/img/Joel-Alves-with-snare-elephant-768x512-1.jpg" alt="Elephant wound treatment" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">South Africa</span>
+            <span class="masonry-item__caption">Elephant wound treatment</span>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-category="namibia wildlife">
+          <img src="/assets/img/goatlas1 (33).jpg" alt="Oryx capture Namibia" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">Namibia</span>
+            <span class="masonry-item__caption">Oryx capture — Erongo</span>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-category="botswana wildlife">
+          <img src="/assets/img/andreas-vonlanthen-GJBNwHkoYvQ-unsplash.jpg" alt="Elephant Okavango Delta" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">Botswana</span>
+            <span class="masonry-item__caption">Chobe elephant herd</span>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-category="south-africa wildlife">
+          <img src="/assets/img/goatlas1 (55).jpg" alt="Leopard monitoring South Africa" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">South Africa</span>
+            <span class="masonry-item__caption">Leopard trap monitoring</span>
+          </div>
+        </div>
+
+        <div class="masonry-item masonry-item--wide" data-category="south-africa field-work">
+          <img src="/assets/img/rhinoteam.jpg" alt="GoWildAtlas team South Africa" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">South Africa</span>
+            <span class="masonry-item__caption">The team after a successful rhino procedure</span>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-category="namibia field-work">
+          <img src="/assets/img/monit.jpg" alt="Black rhino Namibia" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">Namibia</span>
+            <span class="masonry-item__caption">Black rhino monitoring — Kunene</span>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-category="botswana field-work">
+          <img src="/assets/img/mokoro.jpg" alt="Mokoro survey Okavango" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">Botswana</span>
+            <span class="masonry-item__caption">Morning mokoro survey</span>
+          </div>
+        </div>
+
+        <div class="masonry-item masonry-item--tall" data-category="south-africa wildlife">
+          <img src="/assets/img/buff.jpg" alt="Buffalo health screen South Africa" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">South Africa</span>
+            <span class="masonry-item__caption">Buffalo TB screening</span>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-category="namibia wildlife">
+          <img src="/assets/img/gaetano-d-abramo-U8_KkbKDSao-unsplash.jpg" alt="Namibia desert sunset" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">Namibia</span>
+            <span class="masonry-item__caption">End of a field day — Kunene</span>
+          </div>
+        </div>
+
+        <div class="masonry-item" data-category="botswana wildlife">
+          <img src="/assets/img/hendrik-morkel-tKSRP4bZx7A-unsplash.jpg" alt="Crocodile Okavango" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">Botswana</span>
+            <span class="masonry-item__caption">Nile crocodile survey</span>
+          </div>
+        </div>
+         <div class="masonry-item" data-category="ecuador field-work">
+          <img src="/assets/img/goatlas1 (44).jpg " alt="Marine conservation" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <span class="masonry-item__location">Ecuador</span>
+            <span class="masonry-item__caption">Marine conservation work</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       VIDEO TOUR
+       ============================================ -->
+  <section class="section section--dark video-section">
+    <div class="container">
+      <div class="text-center fade-up">
+        <span class="section-label">Programme Tour</span>
+        <div class="divider divider--center"></div>
+        <h2>See It For Yourself.</h2>
+        <p style="margin: 0 auto 3rem;">A short film from our South Africa programme — two weeks in the field, condensed into three minutes.</p>
+      </div>
+      <div class="video-wrap fade-up">
+        <div class="video-placeholder" id="videoPlaceholder">
+          <img src="/assets/img/video-thumb.jpg" alt="Programme video thumbnail" />
+          <button class="video-play-btn" id="videoPlayBtn" aria-label="Play video">
+            <svg viewBox="0 0 24 24" fill="white" width="32" height="32">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </button>
+        </div>
+        <iframe
+          id="videoIframe"
+          src=""
+          data-src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1"
+          title="GoWildAtlas Programme Film"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+          style="display:none;"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       LIGHTBOX
+       ============================================ -->
+  <div class="lightbox" id="lightbox" style="display:none;">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImg" />
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+  <div class="lightbox-backdrop" id="lightboxBackdrop" style="display:none;"></div>
+
+  <!-- CTA -->
+  <section class="section section--sand final-cta text-center">
+    <div class="container fade-up">
+      <span class="section-label">Ready to Be In These Photos?</span>
+      <div class="divider divider--center"></div>
+      <h2>Apply for 2026.</h2>
+      <p style="margin: 0 auto 2.5rem;">Limited places across all programmes. Groups cap at 8 to keep the experience personal and the access real.</p>
+      <a href="/apply.html" class="btn btn--primary">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/gallery.js"></script>
+</body>
+</html>
