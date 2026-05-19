@@ -1,7 +1,6 @@
 /* ============================================
    GOWILDATLAS — MAIN JS
    ============================================ */
-
 // --- Nav HTML ---
 const navHTML = `
 <nav class="site-nav" id="siteNav">
@@ -93,6 +92,8 @@ const footerHTML = `
         <li><a href="/team.html">Team</a></li>
         <li><a href="/locations.html">Locations</a></li>
         <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/safeguarding-policy.html">Safeguarding Policy</a></li>
+        <li><a href="/terms-and-conditions.html">Terms & Conditions</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
     </div>
@@ -128,6 +129,10 @@ const footerHTML = `
   <div class="footer-bottom">
     <div class="container">
       <p>© <span id="footerYear"></span> GoWildAtlas. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="/safeguarding-policy.html">Safeguarding Policy</a>
+        <a href="/terms-and-conditions.html">Terms & Conditions</a>
+      </div>
       
     </div>
   </div>
