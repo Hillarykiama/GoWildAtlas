@@ -28,6 +28,7 @@ const navHTML = `
       <li><a href="/team.html">Team</a></li>
       <li><a href="/gallery.html">Gallery</a></li>
       <li><a href="/reviews.html">Reviews</a></li>
+      <li><a href="/blog.html">Blog</a></li>
       <li><a href="/contact.html">Contact</a></li>
     </ul>
 
@@ -55,6 +56,7 @@ const navHTML = `
       <li><a href="/team.html">Team</a></li>
       <li><a href="/gallery.html">Gallery</a></li>
       <li><a href="/reviews.html">Reviews</a></li>
+      <li><a href="/blog.html">Blog</a></li>
       <li><a href="/contact.html">Contact</a></li>
       <li><a href="/apply.html" class="btn btn--primary">Apply Now</a></li>
     </ul>
@@ -95,6 +97,7 @@ const footerHTML = `
         <li><a href="/locations.html">Locations</a></li>
         <li><a href="/gallery.html">Gallery</a></li>
         <li><a href="/reviews.html">Reviews</a></li>
+        <li><a href="/blog.html">Blog</a></li>
         <li><a href="/safeguarding-policy.html">Safeguarding Policy</a></li>
         <li><a href="/terms-and-conditions.html">Terms & Conditions</a></li>
         <li><a href="/contact.html">Contact</a></li>
