@@ -247,8 +247,14 @@ function initCounters() {
 }
 
 // --- Boot ---
-document.addEventListener('DOMContentLoaded', () => {
+function bootSite() {
   injectLayout();
   initScrollReveal();
   initCounters();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', bootSite, { once: true });
+} else {
+  bootSite();
+}
