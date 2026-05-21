@@ -69,11 +69,16 @@
   <!-- PERFORMANCE -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://gowildatlas.com/f3aa541e99044ebe8e2f181313b92e5a.txt">
+  <link rel="preload" as="image" href="/assets/img/hero-home-960.jpg" imagesrcset="/assets/img/hero-home-480.jpg 480w, /assets/img/hero-home-960.jpg 960w, /assets/img/hero-home-1600.jpg 1600w" imagesizes="100vw" fetchpriority="high">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap"></noscript>
 
   <!-- STYLES -->
   <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/animations.css" />
+  <link rel="preload" as="style" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/animations.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/animations.css"></noscript>
 
   <!-- ORGANIZATION SCHEMA -->
   <script type="application/ld+json">
@@ -166,7 +171,7 @@
        ============================================ -->
   <section class="hero">
     <div class="hero-bg">
-     <img src="/assets/img/neil-and-zulma-scott-hjv3VO-jpnc-unsplash.jpg" alt="Early days in the field" />
+     <img src="/assets/img/hero-home-960.jpg" srcset="/assets/img/hero-home-480.jpg 480w, /assets/img/hero-home-960.jpg 960w, /assets/img/hero-home-1600.jpg 1600w" sizes="100vw" width="960" height="389" alt="Early days in the field" fetchpriority="high" decoding="async" />
       <div class="hero-overlay"></div>
     </div>
 
@@ -216,12 +221,12 @@
     <div class="container press-strip__inner fade-up">
       <span class="press-strip__label" id="press-title">As Seen On</span>
       <div class="press-logos" aria-label="Media logos">
-        <span class="press-logo"><img src="/assets/img/Nationalgeo.jpg" alt="National Geographic" /></span>
-        <span class="press-logo"><img src="/assets/img/Lonely-Planet-logo.png" alt="Lonely Planet" /></span>
-        <span class="press-logo"><img src="/assets/img/2018_Animal_Planet_logo.svg.png" alt="Animal Planet" /></span>
-        <span class="press-logo"><img src="/assets/img/Discovery-Channel-Logo.png" alt="Discovery Channel" /></span>
-        <span class="press-logo"><img src="/assets/img/PBS_logo_2019.png" alt="PBS" /></span>
-        <span class="press-logo"><img src="/assets/img/bbcwildlife.png" alt="BBC Wildlife" /></span>
+        <span class="press-logo"><img src="/assets/img/Nationalgeo.jpg" alt="National Geographic" loading="lazy" decoding="async" /></span>
+        <span class="press-logo"><img src="/assets/img/Lonely-Planet-logo.png" alt="Lonely Planet" loading="lazy" decoding="async" /></span>
+        <span class="press-logo"><img src="/assets/img/2018_Animal_Planet_logo.svg.png" alt="Animal Planet" loading="lazy" decoding="async" /></span>
+        <span class="press-logo"><img src="/assets/img/Discovery-Channel-Logo.png" alt="Discovery Channel" loading="lazy" decoding="async" /></span>
+        <span class="press-logo"><img src="/assets/img/PBS_logo_2019.png" alt="PBS" loading="lazy" decoding="async" /></span>
+        <span class="press-logo"><img src="/assets/img/bbcwildlife.png" alt="BBC Wildlife" loading="lazy" decoding="async" /></span>
       </div>
     </div>
   </section>
@@ -244,7 +249,7 @@
     </div>
 
     <div class="intro-image fade-up img-zoom">
-      <img src="/assets/img/lionsvet.jpg" alt="Wildlife vet at work" />
+      <img src="/assets/img/lionsvet.jpg" alt="Wildlife vet at work" loading="lazy" decoding="async" />
     </div>
   </div>
 </section>
@@ -264,7 +269,7 @@
       <div class="program-grid stagger">
 
        <article class="program-card hover-lift fade-up img-zoom"> 
-  <img src="/assets/img/helii.jpg" alt="South Africa Wildlife Veterinary & Conservation Programme" />
+  <img src="/assets/img/helii.jpg" alt="South Africa Wildlife Veterinary & Conservation Programme" loading="lazy" decoding="async" />
 
   <div class="program-card__body">
     <span class="section-label">South Africa</span>
@@ -282,7 +287,7 @@
 </article>
 
        <article class="program-card hover-lift fade-up img-zoom">
-  <img src="/assets/img/jurgen_bierlein-desert-5720527.jpg" alt="Namibia Wildlife Veterinary & Horseback Conservation Programme" />
+  <img src="/assets/img/jurgen_bierlein-desert-5720527.jpg" alt="Namibia Wildlife Veterinary & Horseback Conservation Programme" loading="lazy" decoding="async" />
   
   <div class="program-card__body">
     <span class="section-label">Namibia</span>
@@ -300,7 +305,7 @@
 </article>
 
        <article class="program-card hover-lift fade-up img-zoom">
-  <img src="/assets/img/goatlas1 (55).jpg" alt="Botswana Okavango Wildlife Veterinary Expedition" />
+  <img src="/assets/img/goatlas1 (55).jpg" alt="Botswana Okavango Wildlife Veterinary Expedition" loading="lazy" decoding="async" />
 
   <div class="program-card__body">
     <span class="section-label">Botswana</span>
@@ -318,7 +323,7 @@
 </article>
 
      <article class="program-card hover-lift fade-up img-zoom">
-  <img src="/assets/img/goatlas1 (17).jpg" alt="Tanzania & Zanzibar Wildlife Veterinary Expedition" />
+  <img src="/assets/img/goatlas1 (17).jpg" alt="Tanzania & Zanzibar Wildlife Veterinary Expedition" loading="lazy" decoding="async" />
   
   <div class="program-card__body">
     <span class="section-label">Tanzania & Zanzibar</span>
@@ -336,7 +341,7 @@
 </article>
 
       <article class="program-card hover-lift fade-up img-zoom">
-  <img src="/assets/img/rus33333-sloth-1502299.jpg" alt="Costa Rica program" />
+  <img src="/assets/img/rus33333-sloth-1502299.jpg" alt="Costa Rica program" loading="lazy" decoding="async" />
   <div class="program-card__body">
     <span class="section-label">Costa Rica</span>
     <h3>Tropical Rescue & Rehab</h3>
@@ -349,7 +354,7 @@
 
         
       <article class="program-card hover-lift fade-up img-zoom">
-  <img src="/assets/img/mana5280-l-g2bn6Z__M-unsplash.jpg" alt="Ecuador program" />
+  <img src="/assets/img/mana5280-l-g2bn6Z__M-unsplash.jpg" alt="Ecuador program" loading="lazy" decoding="async" />
   <div class="program-card__body">
     <span class="section-label">Ecuador</span>
     <h3>Galapagos & Rainforest</h3>
@@ -506,6 +511,6 @@
   <!-- FOOTER -->
   <div id="footer-placeholder"></div>
 
-  <script src="/js/main.js"></script>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>
