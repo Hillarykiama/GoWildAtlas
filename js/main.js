@@ -7,7 +7,7 @@ const navHTML = `
   <div class="container nav-inner">
 
     <a href="/index.html" class="nav-logo">
-      <img src="/assets/img/logo-site-480.jpg" width="480" height="128" alt="GoWildAtlas" class="nav-logo__img" decoding="async" />
+      <img src="/assets/img/logodp.png" alt="GoWildAtlas" class="nav-logo__img" />
     </a>
 
     <ul class="nav-links">
@@ -70,7 +70,7 @@ const footerHTML = `
   <div class="container footer-inner">
 
     <div class="footer-brand">
-  <img src="/assets/img/logo-site-480.jpg" width="480" height="128" alt="GoWildAtlas" class="footer-logo" loading="lazy" decoding="async" />
+  <img src="/assets/img/logodp.png" alt="GoWildAtlas" class="footer-logo" />
   <p>Explore. Intervene. Conserve.</p>
   <p class="footer-tagline-sub">
     Wildlife veterinary and conservation adventures across Africa & Latin America.
@@ -247,14 +247,8 @@ function initCounters() {
 }
 
 // --- Boot ---
-function bootSite() {
+document.addEventListener('DOMContentLoaded', () => {
   injectLayout();
   initScrollReveal();
   initCounters();
-}
-
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', bootSite, { once: true });
-} else {
-  bootSite();
-}
+});
