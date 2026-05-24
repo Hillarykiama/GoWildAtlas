@@ -14,7 +14,7 @@ const navHTML = `
       <li><a href="/about.html">About</a></li>
       <li><a href="/locations.html">Locations</a></li>
       <li class="has-dropdown">
-        <a href="#">Programs ▾</a>
+        <a href="#">Programmes ▾</a>
         <ul class="dropdown">
           <li><a href="/programs/south-africa.html">South Africa</a></li>
           <li><a href="/programs/namibia.html">Namibia</a></li>
@@ -73,12 +73,12 @@ const footerHTML = `
   <img src="/assets/img/logodp.png" alt="GoWildAtlas" class="footer-logo" />
   <p>Explore. Intervene. Conserve.</p>
   <p class="footer-tagline-sub">
-    Wildlife veterinary and conservation adventures across Africa & Latin America.
+    Wildlife veterinary and conservation programmes across Africa and Latin America.
   </p>
 </div>
 
     <div class="footer-links">
-      <h4>Programs</h4>
+      <h4>Programmes</h4>
       <ul>
         <li><a href="/programs/south-africa.html">South Africa</a></li>
         <li><a href="/programs/namibia.html">Namibia</a></li>
