@@ -1252,6 +1252,65 @@ p {
   min-height: 340px;
 }
 
+.apply-hero {
+  height: auto;
+  min-height: 560px;
+  padding-bottom: 4.5rem;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 36px, rgba(242,234,211,0.05) 36px 37px),
+    repeating-linear-gradient(90deg, transparent 0 36px, rgba(242,234,211,0.05) 36px 37px),
+    linear-gradient(135deg, #11150b 0%, #2c3a1e 58%, #15190d 100%);
+}
+
+.apply-hero .page-hero__bg,
+.apply-hero .page-hero__overlay {
+  display: none;
+}
+
+.apply-hero__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.72fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  margin-top: clamp(9rem, 16vh, 12rem);
+  width: 100%;
+}
+
+.apply-hero__copy {
+  min-width: 0;
+}
+
+.apply-hero__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(242,234,211,0.24);
+  border-left: 1px solid rgba(242,234,211,0.24);
+}
+
+.apply-hero__item {
+  min-height: 104px;
+  padding: 1.15rem;
+  border-right: 1px solid rgba(242,234,211,0.24);
+  border-bottom: 1px solid rgba(242,234,211,0.24);
+  background-color: rgba(242,234,211,0.045);
+}
+
+.apply-hero__item span {
+  display: block;
+  margin-bottom: 1.15rem;
+  color: var(--amber);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.apply-hero__item strong {
+  display: block;
+  color: var(--warm);
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
 .locations-hero {
   background:
     radial-gradient(circle at 18% 25%, rgba(200,134,10,0.18), transparent 28%),
@@ -3111,6 +3170,30 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .apply-hero {
+    min-height: 650px;
+  }
+
+  .apply-hero__content {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 1.75rem;
+    margin-top: 8.5rem;
+  }
+
+  .apply-hero__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .apply-hero__item {
+    min-height: 88px;
+    padding: 0.95rem;
+  }
+
+  .apply-hero__item span {
+    margin-bottom: 0.85rem;
+  }
+
   .form-grid {
     grid-template-columns: 1fr;
   }
@@ -3129,6 +3212,24 @@ textarea {
 
   .apply-step {
     font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .apply-hero {
+    min-height: 680px;
+  }
+
+  .apply-hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .apply-hero__item {
+    padding: 0.85rem;
+  }
+
+  .apply-hero__item strong {
+    font-size: 0.82rem;
   }
 }
 

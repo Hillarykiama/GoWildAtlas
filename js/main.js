@@ -25,7 +25,6 @@ const navHTML = `
           <li><a href="/programs/ecuador.html">Ecuador</a></li>
         </ul>
       </li>
-      <li><a href="/team.html">Team</a></li>
       <li><a href="/gallery.html">Gallery</a></li>
       <li><a href="/reviews.html">Reviews</a></li>
       <li><a href="/blog.html">Blog</a></li>
@@ -53,7 +52,6 @@ const navHTML = `
       <li><a href="/programs/zanzibar.html">Zanzibar</a></li>
       <li><a href="/programs/costa-rica.html">Costa Rica</a></li>
       <li><a href="/programs/ecuador.html">Ecuador</a></li>
-      <li><a href="/team.html">Team</a></li>
       <li><a href="/gallery.html">Gallery</a></li>
       <li><a href="/reviews.html">Reviews</a></li>
       <li><a href="/blog.html">Blog</a></li>
@@ -93,7 +91,6 @@ const footerHTML = `
       <h4>Company</h4>
       <ul>
         <li><a href="/about.html">About</a></li>
-        <li><a href="/team.html">Team</a></li>
         <li><a href="/locations.html">Locations</a></li>
         <li><a href="/gallery.html">Gallery</a></li>
         <li><a href="/reviews.html">Reviews</a></li>

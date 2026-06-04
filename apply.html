@@ -25,15 +25,31 @@
   <div id="nav-placeholder"></div>
 
   <!-- PAGE HERO -->
-  <section class="page-hero page-hero--short">
+  <section class="page-hero page-hero--short apply-hero">
     <div class="page-hero__bg">
       
       <div class="page-hero__overlay"></div>
     </div>
-    <div class="container page-hero__content">
-      <span class="section-label hero-reveal">Applications 2026</span>
-      <h1 class="hero-reveal">Apply for Your<br>Field Season.</h1>
-      <p class="hero-reveal">Complete the form below. We review every application personally and respond within 3 working days.</p>
+    <div class="container page-hero__content apply-hero__content">
+      <div class="apply-hero__copy">
+        <span class="section-label hero-reveal">Applications 2026</span>
+        <h1 class="hero-reveal">Begin in the<br>Field.</h1>
+        <p class="hero-reveal">Tell us where you want the trail to start. We will review your details personally and help shape the right wildlife programme around your dates, background and ambitions.</p>
+      </div>
+      <div class="apply-hero__grid hero-reveal" aria-label="Application summary">
+        <div class="apply-hero__item">
+          <span>01</span>
+          <strong>Choose your field base</strong>
+        </div>
+        <div class="apply-hero__item">
+          <span>02</span>
+          <strong>Mark your travel window</strong>
+        </div>
+        <div class="apply-hero__item">
+          <span>03</span>
+          <strong>A personal reply within 3 working days</strong>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -50,7 +66,7 @@
         </div>
         <div class="apply-steps" id="applySteps">
           <span class="apply-step active" data-step="1">Personal</span>
-          <span class="apply-step" data-step="2">Professional</span>
+          <span class="apply-step" data-step="2">Background</span>
           <span class="apply-step" data-step="3">Programme</span>
           <span class="apply-step" data-step="4">Final</span>
         </div>
@@ -103,17 +119,17 @@
           <div class="form-nav">
             <span></span>
             <button type="button" class="btn btn--primary next-btn" data-next="2">
-              Next — Professional Details →
+              Next — Background →
             </button>
           </div>
         </div>
 
-        <!-- ── Step 2: Professional Background ── -->
+        <!-- ── Step 2: Background ── -->
         <div class="form-step" id="step-2">
           <div class="form-step__header">
             <span class="section-label">Step 2 of 4</span>
             <h2>Your Background</h2>
-            <p>This helps us understand your experience and match you with the right field team.</p>
+            <p>This helps us understand where you are coming from.</p>
           </div>
 
           <div class="form-grid">
@@ -136,23 +152,6 @@
 
                 <option value="other">Other</option>
               </select>
-            </div>
-
-            <div class="form-group">
-              <label for="experienceLevel">Experience Level <span class="required">*</span></label>
-              <select id="experienceLevel" name="experienceLevel" required>
-                <option value="" disabled selected>Select experience level</option>
-                <option value="new-to-fieldwork">New to fieldwork</option>
-                <option value="animal-care">Animal care or volunteering experience</option>
-                <option value="clinical-training">Clinical or veterinary training</option>
-                <option value="wildlife-conservation">Wildlife / conservation field experience</option>
-                <option value="qualified-professional">Qualified professional</option>
-              </select>
-            </div>
-
-            <div class="form-group form-group--full">
-              <label for="questions">Relevant Experience or Questions</label>
-              <textarea id="questions" name="questions" rows="4" placeholder="Optional - tell us about relevant animal, veterinary, conservation, travel, or field experience. You can also ask us anything here."></textarea>
             </div>
 
           </div>
@@ -242,22 +241,6 @@
             </div>
 
             <div class="form-group form-group--full">
-              <label for="alternateDates">Alternative Dates</label>
-              <select id="alternateDates" name="alternateDates">
-                <option value="" selected>No alternative preference</option>
-                <option value="1-14-june-2026">1 - 14 June 2026</option>
-                <option value="15-28-june-2026">15 - 28 June 2026</option>
-                <option value="29-june-12-july-2026">29 June - 12 July 2026</option>
-                <option value="13-26-july-2026">13 - 26 July 2026</option>
-                <option value="27-july-9-august-2026">27 July - 9 August 2026</option>
-                <option value="10-23-august-2026">10 - 23 August 2026</option>
-                <option value="24-august-6-september-2026">24 August - 6 September 2026</option>
-                <option value="7-20-september-2026">7 - 20 September 2026</option>
-                <option value="21-september-4-october-2026">21 September - 4 October 2026</option>
-                <option value="5-18-october-2026">5 - 18 October 2026</option>
-              </select>
-            </div>
-            <div class="form-group form-group--full">
               <label for="hearAboutUs">How did you hear about us?</label>
               <select id="hearAboutUs" name="hearAboutUs">
                 <option value="" disabled selected>Select an option</option>
@@ -287,7 +270,7 @@
           <div class="form-step__header">
             <span class="section-label">Step 4 of 4</span>
             <h2>Final Details</h2>
-            <p>Almost there — just a few final questions.</p>
+            <p>Almost there — just the essentials.</p>
           </div>
 
           <div class="form-grid">
@@ -299,11 +282,6 @@
             <div class="form-group form-group--full">
               <label for="emergencyContact">Emergency Contact Name & Number <span class="required">*</span></label>
               <input type="text" id="emergencyContact" name="emergencyContact" required placeholder="e.g. John Mitchell — +44 7700 111111" />
-            </div>
-
-            <div class="form-group form-group--full">
-              <label for="additionalInfo">Anything Else We Should Know?</label>
-              <textarea id="additionalInfo" name="additionalInfo" rows="3" placeholder="Any additional information, questions, or specific requests..."></textarea>
             </div>
 
             <div class="form-group form-group--full">
@@ -319,6 +297,7 @@
                 <span>I am happy to receive programme updates and news from GoWildAtlas by email.</span>
               </label>
             </div>
+
           </div>
 
           <div class="form-nav">
@@ -362,7 +341,7 @@
         <div class="reassurance-item fade-up">
           <span class="reassurance-icon">⟳</span>
           <h4>Flexible Dates</h4>
-          <p>If your preferred dates aren't available we will work with you to find the best alternative.</p>
+          <p>If your preferred dates aren't available we will work with you to find another suitable option.</p>
         </div>
       </div>
     </div>
