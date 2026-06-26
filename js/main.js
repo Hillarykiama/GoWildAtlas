@@ -89,12 +89,13 @@ const footerHTML = `
     </div>
 
     <div class="footer-links">
-      <h4>Company</h4>
+      
       <ul>
         <li><a href="/about.html">About</a></li>
         <li><a href="/locations.html">Locations</a></li>
         <li><a href="/gallery.html">Gallery</a></li>
         <li><a href="/reviews.html">Reviews</a></li>
+        <li><a href="/impact.html">Impact</a></li>
         <li><a href="/blog.html">Blog</a></li>
         <li><a href="/safeguarding-policy.html">Safeguarding Policy</a></li>
         <li><a href="/terms-and-conditions.html">Terms & Conditions</a></li>
