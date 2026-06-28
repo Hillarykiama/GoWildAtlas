@@ -7,9 +7,7 @@ const ACTIVE_COUNTRIES = [
   'South Africa',
   'Namibia',
   'Botswana',
-  'United Republic of Tanzania',
-  'Costa Rica',
-  'Ecuador'
+  'United Republic of Tanzania'
 ];
 
 // Countries coming soon

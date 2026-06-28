@@ -22,8 +22,6 @@ const navHTML = `
           <li><a href="/programs/botswana.html">Botswana</a></li>
           <li><a href="/programs/tanzania.html">Tanzania</a></li>
           <li><a href="/programs/zanzibar.html">Zanzibar</a></li>
-          <li><a href="/programs/costa-rica.html">Costa Rica</a></li>
-          <li><a href="/programs/ecuador.html">Ecuador</a></li>
         </ul>
       </li>
       <li><a href="/gallery.html">Gallery</a></li>
@@ -51,8 +49,6 @@ const navHTML = `
       <li><a href="/programs/botswana.html">Botswana</a></li>
       <li><a href="/programs/tanzania.html">Tanzania</a></li>
       <li><a href="/programs/zanzibar.html">Zanzibar</a></li>
-      <li><a href="/programs/costa-rica.html">Costa Rica</a></li>
-      <li><a href="/programs/ecuador.html">Ecuador</a></li>
       <li><a href="/gallery.html">Gallery</a></li>
       <li><a href="/reviews.html">Reviews</a></li>
       <li><a href="/blog.html">Blog</a></li>
@@ -72,7 +68,7 @@ const footerHTML = `
   <img src="/assets/img/logodp.png" alt="GoWildAtlas" class="footer-logo" />
   <p>Explore. Intervene. Conserve.</p>
   <p class="footer-tagline-sub">
-    Wildlife veterinary and conservation programmes across Africa and Latin America.
+    Wildlife veterinary and conservation programmes across Africa.
   </p>
 </div>
 
@@ -83,8 +79,6 @@ const footerHTML = `
         <li><a href="/programs/namibia.html">Namibia</a></li>
         <li><a href="/programs/botswana.html">Botswana</a></li>
         <li><a href="/programs/tanzania.html">Tanzania</a></li>
-        <li><a href="/programs/costa-rica.html">Costa Rica</a></li>
-        <li><a href="/programs/ecuador.html">Ecuador</a></li>
       </ul>
     </div>
 
