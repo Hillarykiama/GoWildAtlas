@@ -78,7 +78,7 @@ const footerHTML = `
         <li><a href="/programs/south-africa.html">South Africa</a></li>
         <li><a href="/programs/namibia.html">Namibia</a></li>
         <li><a href="/programs/botswana.html">Botswana</a></li>
-        <li><a href="/programs/tanzania.html">Tanzania</a></li>
+        <li><a href="/programs/tanzania.html">Tanzania/Zanzibar</a></li>
       </ul>
     </div>
 
