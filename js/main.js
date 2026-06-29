@@ -4,7 +4,6 @@
 // --- Nav HTML ---
 const navHTML = `
 <nav class="site-nav" id="siteNav">
-  <div class="site-announcement">20% off when you secure your 2026 place by September</div>
   <div class="container nav-inner">
 
     <a href="/index.html" class="nav-logo">
