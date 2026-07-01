@@ -105,6 +105,13 @@
   <!-- BLOG -->
 
   <url>
+    <loc>https://gowildatlas.com/blog/june-2026-round-up.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://gowildatlas.com/blog/wildlife-vet-experience.html</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
