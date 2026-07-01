@@ -1989,8 +1989,10 @@ p {
   }
 
   .safeguarding-hero .page-hero__content h1 {
-    max-width: 9ch;
-    font-size: clamp(2.7rem, 15vw, 4rem);
+    max-width: min(100%, 11ch);
+    overflow: visible;
+    font-size: clamp(2.55rem, 12vw, 3.7rem);
+    overflow-wrap: normal;
   }
 
   .safeguarding-hero .page-hero__content p {
