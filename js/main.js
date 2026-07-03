@@ -204,6 +204,7 @@ function initScrollReveal() {
 }
 
 // --- Stat Counters ---
+
 function initCounters() {
   const counters = document.querySelectorAll('[data-count]');
   if (!counters.length) return;
@@ -218,6 +219,7 @@ function initCounters() {
         const step = target / (duration / 16);
         let current = 0;
 
+        el.textContent = '0' + suffix; // ← add this: reset only once we know JS + observer are running
         el.classList.add('counting');
 
         const timer = setInterval(() => {
