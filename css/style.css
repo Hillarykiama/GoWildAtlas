@@ -5295,6 +5295,11 @@ textarea {
   padding-bottom: 4rem;
 }
 
+.blog-featured .container {
+  display: grid;
+  gap: 1rem;
+}
+
 .blog-featured-card {
   display: grid;
   grid-template-columns: 0.75fr 2fr auto;
