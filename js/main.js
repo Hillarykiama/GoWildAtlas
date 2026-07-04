@@ -23,6 +23,7 @@ const navHTML = `
           <li><a href="/programs/zanzibar.html">Zanzibar</a></li>
         </ul>
       </li>
+      <li><a href="/research.html">Research</a></li>
       <li><a href="/gallery.html">Gallery</a></li>
       <li><a href="/reviews.html">Reviews</a></li>
       <li><a href="/blog.html">Blog</a></li>
@@ -48,6 +49,7 @@ const navHTML = `
       <li><a href="/programs/botswana.html">Botswana</a></li>
       <li><a href="/programs/tanzania.html">Tanzania</a></li>
       <li><a href="/programs/zanzibar.html">Zanzibar</a></li>
+      <li><a href="/research.html">Research</a></li>
       <li><a href="/gallery.html">Gallery</a></li>
       <li><a href="/reviews.html">Reviews</a></li>
       <li><a href="/blog.html">Blog</a></li>
@@ -78,6 +80,7 @@ const footerHTML = `
         <li><a href="/programs/namibia.html">Namibia</a></li>
         <li><a href="/programs/botswana.html">Botswana</a></li>
         <li><a href="/programs/tanzania.html">Tanzania/Zanzibar</a></li>
+        <li><a href="/research.html">Research</a></li>
       </ul>
     </div>
 
@@ -86,6 +89,7 @@ const footerHTML = `
       <ul>
         <li><a href="/about.html">About</a></li>
         <li><a href="/locations.html">Locations</a></li>
+        <li><a href="/research.html">Research</a></li>
         <li><a href="/gallery.html">Gallery</a></li>
         <li><a href="/reviews.html">Reviews</a></li>
         <li><a href="/impact.html">Impact</a></li>
