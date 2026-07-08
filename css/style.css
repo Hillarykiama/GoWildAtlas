@@ -585,13 +585,32 @@ p {
 .footer-contact p {
   font-size: 0.9rem;
   color: rgba(44,58,30,0.72);
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.7rem;
   max-width: none;
+}
+
+.footer-email-list {
+  margin-bottom: 1.25rem;
+}
+
+.footer-email-list p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.footer-email-list span {
+  color: var(--amber);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .footer-contact a {
   color: rgba(44,58,30,0.72);
   transition: color var(--transition);
+  overflow-wrap: anywhere;
 }
 
 .footer-contact a:hover {
@@ -4716,11 +4735,29 @@ textarea {
   gap: 0.4rem;
 }
 
+.contact-email-list {
+  display: grid;
+  gap: 1.15rem;
+}
+
 .contact-link {
   font-family: var(--font-display);
   font-size: 1.4rem;
   color: var(--olive);
   transition: color var(--transition);
+  overflow-wrap: anywhere;
+}
+
+.contact-link span {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--amber);
 }
 
 .contact-link:hover {

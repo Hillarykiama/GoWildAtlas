@@ -102,7 +102,11 @@ const footerHTML = `
 
     <div class="footer-contact">
       <h4>Get In Touch</h4>
-      <p><a href="mailto:info@gowildatlas.com">info@gowildatlas.com</a></p>
+      <div class="footer-email-list">
+        <p><span>General</span><a href="mailto:info@gowildatlas.com">info@gowildatlas.com</a></p>
+        <p><span>Research</span><a href="mailto:research@gowildatlas.com">research@gowildatlas.com</a></p>
+        <p><span>Partnerships</span><a href="mailto:partnerships@gowildatlas.com">partnerships@gowildatlas.com</a></p>
+      </div>
       
       <div class="footer-social">
         <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
