@@ -879,15 +879,16 @@ p {
 
 .stats-strip {
   background-color: var(--olive);
-  padding: 3rem 0;
+  padding: 3.25rem 0;
   position: relative;
   z-index: 2;
 }
 
 .stats-inner {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.5rem, 5vw, 4.5rem);
+  max-width: 920px;
   text-align: center;
 }
 
@@ -895,9 +896,16 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.4rem;
+  justify-content: center;
+  gap: 0.65rem;
+  min-width: 0;
+  padding: 0 1.5rem;
   opacity: 1;
   transform: none;
+}
+
+.stat + .stat {
+  border-left: 1px solid rgba(242,234,211,0.18);
 }
 
 .stat-number {
@@ -913,6 +921,8 @@ p {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(242,234,211,0.6);
+  max-width: 18ch;
+  overflow-wrap: anywhere;
 }
 
 /* ============================================
@@ -1167,6 +1177,14 @@ p {
    ============================================ */
 
 @media (max-width: 1024px) {
+  .stats-inner {
+    gap: 1.5rem;
+  }
+
+  .stat {
+    padding: 0 1rem;
+  }
+
   .program-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1187,8 +1205,25 @@ p {
 }
 
 @media (max-width: 768px) {
+  .stats-strip {
+    padding: 2.5rem 0;
+  }
+
   .stats-inner {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 360px;
+  }
+
+  .stats-inner .stat {
+    padding: 0 0 1.5rem;
+    border-left: 0;
+    border-bottom: 1px solid rgba(242,234,211,0.18);
+  }
+
+  .stat:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
   }
 
   .intro-inner {
@@ -5602,6 +5637,27 @@ a.blog-post-card {
   gap: 1rem;
 }
 
+.blog-faq--footer {
+  border-top: 1px solid rgba(44,58,30,0.14);
+  padding: 4.5rem 0;
+}
+
+.blog-faq-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.blog-faq-intro {
+  position: sticky;
+  top: calc(var(--nav-height) + 5.5rem);
+}
+
+.blog-faq-intro p {
+  margin-top: 1rem;
+}
+
 .blog-faq-grid article {
   padding: 1.5rem;
   background-color: var(--warm);
@@ -5778,6 +5834,15 @@ a.blog-post-card {
   .blog-route-grid,
   .blog-faq-grid {
     grid-template-columns: 1fr;
+  }
+
+  .blog-faq-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .blog-faq-intro {
+    position: static;
   }
 
   .blog-route {
