@@ -5287,7 +5287,7 @@ textarea {
 
 .blog-category-grid {
   display: grid;
-  grid-template-columns: repeat(9, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
   gap: 0.5rem;
 }
 
@@ -5305,6 +5305,7 @@ textarea {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-align: center;
+  overflow-wrap: anywhere;
   transition: background-color var(--transition), color var(--transition), border-color var(--transition);
 }
 
@@ -5340,7 +5341,7 @@ textarea {
 
 .blog-featured-card {
   display: grid;
-  grid-template-columns: 0.75fr 2fr auto;
+  grid-template-columns: minmax(145px, 0.75fr) minmax(0, 2fr) minmax(150px, auto);
   gap: 2rem;
   align-items: center;
   padding: 2.5rem;
@@ -5352,6 +5353,10 @@ textarea {
   border-radius: 2px;
   box-shadow: var(--shadow-sm);
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.blog-featured-card > * {
+  min-width: 0;
 }
 
 .blog-featured-card:hover {
@@ -5381,11 +5386,12 @@ textarea {
 }
 
 .blog-featured-card__link {
-  white-space: nowrap;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
+  text-align: right;
 }
 
 .blog-topic-sections {
@@ -5394,7 +5400,7 @@ textarea {
 
 .blog-topic-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
 }
 
@@ -5406,6 +5412,7 @@ textarea {
   background-color: var(--warm);
   border: 1px solid rgba(44,58,30,0.14);
   border-radius: 2px;
+  min-width: 0;
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
@@ -5438,7 +5445,7 @@ textarea {
 
 .blog-route-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
   gap: 1rem;
 }
 
@@ -5451,6 +5458,7 @@ textarea {
   border: 1px solid rgba(44,58,30,0.14);
   color: inherit;
   text-decoration: none;
+  min-width: 0;
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
@@ -5501,6 +5509,7 @@ textarea {
   background-color: var(--sand);
   border: 1px solid rgba(44,58,30,0.14);
   border-radius: 2px;
+  min-width: 0;
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
@@ -5532,6 +5541,7 @@ a.blog-post-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1rem;
   color: rgba(44,58,30,0.58);
   font-size: 0.74rem;
@@ -5544,6 +5554,14 @@ a.blog-post-card {
   color: var(--amber);
 }
 
+.blog-post-card__top span,
+.blog-post-card__top time,
+.blog-featured-card__label span,
+.blog-featured-card__label time {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .blog-post-card h3 {
   margin: 1.4rem 0 0.85rem;
 }
@@ -5551,6 +5569,7 @@ a.blog-post-card {
 .blog-post-card p {
   font-size: 0.92rem;
   color: rgba(15,18,9,0.68);
+  overflow-wrap: anywhere;
 }
 
 .blog-post-card__footer {
@@ -5944,4 +5963,22 @@ a.blog-post-card {
   .impact-dispatches-grid {
     grid-template-columns: 1fr;
   }
+}
+/* === Blog card meta + category filter styles ===
+   Append these to css/style.css (e.g. near other .blog-* rules) */
+
+.blog-post-card__top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+}
+
+.blog-category-grid a.is-active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.blog-post-card[hidden] {
+  display: none !important;
 }

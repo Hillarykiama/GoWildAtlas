@@ -250,3 +250,39 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initCounters();
 });
+// Blog category filter — only needed on blog.html
+// (queries #category-filter and #post-grid, which don't exist elsewhere)
+(function () {
+  var filterLinks = document.querySelectorAll('#category-filter a[data-filter]');
+  var jumpLinks = document.querySelectorAll('[data-filter-jump]');
+  var cards = document.querySelectorAll('#post-grid .blog-post-card');
+
+  function applyFilter(filter) {
+    cards.forEach(function (card) {
+      var cats = (card.getAttribute('data-category') || '').split(' ');
+      var show = filter === 'all' || cats.indexOf(filter) !== -1;
+      card.hidden = !show;
+    });
+    filterLinks.forEach(function (link) {
+      link.classList.toggle('is-active', link.getAttribute('data-filter') === filter);
+    });
+  }
+
+  filterLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var filter = link.getAttribute('data-filter');
+      applyFilter(filter);
+      document.getElementById('all-posts').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  jumpLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var filter = link.getAttribute('data-filter-jump');
+      applyFilter(filter);
+      document.getElementById('all-posts').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+})();
