@@ -1030,6 +1030,63 @@ p {
 }
 
 /* ============================================
+   SEASONAL HIGHLIGHT
+   ============================================ */
+
+.seasonal-highlight {
+  background-color: var(--warm);
+  padding-top: 0;
+}
+
+.seasonal-highlight__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 4rem;
+  align-items: center;
+  padding-top: 5rem;
+  border-top: 1px solid rgba(44,58,30,0.14);
+}
+
+.seasonal-highlight__image img {
+  width: 100%;
+  aspect-ratio: 5/4;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: var(--shadow-md);
+}
+
+.seasonal-highlight__content h2 {
+  margin-bottom: 1rem;
+}
+
+.seasonal-highlight__content p {
+  margin-top: 1rem;
+}
+
+.seasonal-highlight__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  margin-top: 2rem;
+}
+
+.seasonal-highlight__link {
+  color: var(--olive);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(200,134,10,0.6);
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.seasonal-highlight__link:hover {
+  color: var(--amber);
+  border-color: var(--amber);
+}
+
+/* ============================================
    PROGRAMS
    ============================================ */
 
@@ -1248,6 +1305,21 @@ p {
   .intro-inner {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+
+  .seasonal-highlight__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 3.5rem;
+  }
+
+  .seasonal-highlight__image {
+    order: -1;
+  }
+
+  .seasonal-highlight__actions {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .program-grid {
