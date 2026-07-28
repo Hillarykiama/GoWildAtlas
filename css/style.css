@@ -1047,6 +1047,10 @@ p {
   border-top: 1px solid rgba(44,58,30,0.14);
 }
 
+.seasonal-highlight__image {
+  grid-row: 1 / span 2;
+}
+
 .seasonal-highlight__image img {
   width: 100%;
   aspect-ratio: 5/4;
@@ -1055,7 +1059,12 @@ p {
   box-shadow: var(--shadow-md);
 }
 
-.seasonal-highlight__content h2 {
+.seasonal-highlight__heading,
+.seasonal-highlight__content {
+  grid-column: 2;
+}
+
+.seasonal-highlight__heading h2 {
   margin-bottom: 1rem;
 }
 
@@ -1066,9 +1075,16 @@ p {
 .seasonal-highlight__actions {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   gap: 1rem 1.5rem;
   margin-top: 2rem;
+}
+
+.seasonal-highlight__actions .btn,
+.seasonal-highlight__link {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .seasonal-highlight__link {
@@ -1307,18 +1323,51 @@ p {
     gap: 3rem;
   }
 
+  .intro-text,
+  .seasonal-highlight__heading,
+  .seasonal-highlight__content {
+    text-align: center;
+  }
+
+  .intro-text .divider,
+  .seasonal-highlight__heading .divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intro-text p,
+  .seasonal-highlight__content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .seasonal-highlight__inner {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding-top: 3.5rem;
   }
 
+  .seasonal-highlight__heading,
+  .seasonal-highlight__image,
+  .seasonal-highlight__content {
+    grid-column: 1;
+  }
+
+  .seasonal-highlight__heading {
+    order: 1;
+  }
+
   .seasonal-highlight__image {
-    order: -1;
+    order: 2;
+    grid-row: auto;
+  }
+
+  .seasonal-highlight__content {
+    order: 3;
   }
 
   .seasonal-highlight__actions {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
   }
 
