@@ -113,6 +113,13 @@
   <!-- BLOG -->
 
   <url>
+    <loc>https://gowildatlas.com/blog/what-to-expect-august-wildlife-programme.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://gowildatlas.com/blog/serengeti-busy-season-migration-ethics.html</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
